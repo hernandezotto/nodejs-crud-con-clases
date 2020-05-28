@@ -1,0 +1,25 @@
+{
+  "npm-scripts.showStartNotification": false,
+  "sqltools.connections": [
+    {
+      "database": "tecsisline",
+      "dialect": "MySQL",
+      "name": "MySQL_Tecsisline",
+      "password": "metallica21",
+      "port": 3306,
+      "server": "localhost",
+      "username": "root"
+    },
+    {
+      "askForPassword": true,
+      "database": "mysql",
+      "dialect": "MySQL",
+      "isActive": false,
+      "isConnected": false,
+      "name": "LaragonMySQL",
+      "port": 3306,
+      "server": "localhost",
+      "username": "root"
+    }
+  ]
+}

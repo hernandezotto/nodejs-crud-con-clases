@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="./css/style.css")
+    link(rel="stylesheet", href="")
+    title News
+  body
+    nav
+      div.nav-wrapper.indigo
+        a.brand-logo.center(href="#") NEWS
+    .container.row   
+
+      //- tabla que da los datos en vista  del usuario 
+      table.card.centered.striped.left.col.s5.left
+        thead.indigo.lighten-2               
+          tr                  
+            th Id
+            th Titulo
+            th Noticias 
+        tbody
+          -for(let i=0; i< newsRows.length; i++)
+            tr
+              each row in [newsRows[i].idNews,newsRows[i].title,newsRows[i].news]
+                td= row
+                
+      //- El formulario  crea la en ingreso de los datos de los usuarios           
+      form.card.grid-example.col.s5.right(action="/news" method="post")
+        .input-field.col.s10
+          label(for="title",) title
+          input#title.validate(type="text",name="title" autofocus)
+        .input-field.col.s10
+          textarea#news.materialize-textarea.validate(type="textarea",name="news")
+          label(for="news",) news
+        
+        button.card.z-depth-1.btn.waves-effect.indigo(type="submit",name="action",data-length="255 ") Enviar
+          i.material-icons.right send 

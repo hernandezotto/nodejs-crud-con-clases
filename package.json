@@ -1,0 +1,21 @@
+{
+  "name": "pruebas",
+  "version": "0.0.1",
+  "description": "Prueba para uso de clases ",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js -i public/*",
+    "start": "node index.js"
+  },
+  "author": "Otoniel Hernández",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
